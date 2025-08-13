@@ -1,5 +1,5 @@
 let configuraciones = {
-    API_BACKEND: "http://localhost:3001/api/productos"
+    API_BACKEND: "https://simplefullstackapp.onrender.com/api/productos"
 }
 
 
