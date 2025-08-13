@@ -1,0 +1,5 @@
+Acuerdense que no es necesario tener ambas carpetas en la misma ubicacion, estas dos carpetas pueden estar en dos lugares totalmente diferente y se comunican mediante los puertos. Asi que no estan relacionados mas alla de las rutas.
+
+
+
+Falta cosas para implementar del front para utilizar todas las rutas pero es una Demo de como usarlo.

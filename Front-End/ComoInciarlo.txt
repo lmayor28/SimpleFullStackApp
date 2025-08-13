@@ -1,0 +1,1 @@
+Simplemente en el index.html iniciar con el Live server y deberia de estar prendido el servidor. Primero deben de iniciar el backend primero para que pueda conseguir los datos.

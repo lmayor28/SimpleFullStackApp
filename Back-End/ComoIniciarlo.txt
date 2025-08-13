@@ -1,0 +1,4 @@
+Deben de abrir en consola esta carpeta (Back-End) y ejecutar: 
+	npm install
+	
+El comando va a buscar en el package.json los paquetes necesarios para iniciar el proyecto y crear la carpeta node_modules y no se necesita hacer nada mas. (Mas alla de iniciar el servidor con: node server.js)

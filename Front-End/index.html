@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend para API de Productos</title>
+    
+    <!-- 1. Incluimos Axios desde la CDN -->
+    <script  src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Estilos simples para que se vea mejor -->
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f9; color: #333; padding: 20px; }
+        h1, h2 { color: #444; }
+        #lista-productos { list-style-type: none; padding: 0; }
+        #lista-productos li { background-color: #fff; border: 1px solid #ddd; margin-bottom: 8px; padding: 15px; border-radius: 5px; display: flex; justify-content: space-between; align-items: center; }
+        .precio { font-weight: bold; color: #007bff; }
+        form { background-color: #fff; padding: 20px; border-radius: 5px; border: 1px solid #ddd; margin-top: 20px; }
+        input { width: calc(100% - 22px); padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { background-color: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+    <h1>Catálogo de Productos</h1>
+    
+    <!-- Aquí mostraremos la lista de productos que obtengamos de la API -->
+    <h2>Productos existentes</h2>
+    <ul id="lista-productos">
+        <!-- Los productos se cargarán aquí con JavaScript -->
+    </ul>
+
+    <!-- Formulario para añadir un nuevo producto -->
+    <h2>Añadir nuevo producto</h2>
+    <form id="formulario-producto">
+        <input type="text" id="nombre-producto" placeholder="Nombre del producto" required>
+        <input type="number" id="precio-producto" placeholder="Precio" step="0.01" required>
+        <button type="submit">Añadir Producto</button>
+    </form>
+
+    <!-- 2. Enlazamos nuestro propio archivo JavaScript (debe ir al final del body) -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
